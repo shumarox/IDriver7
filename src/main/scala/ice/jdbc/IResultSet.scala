@@ -3,10 +3,7 @@ package ice.jdbc
 import java.io.{InputStream, Reader}
 import java.math.BigDecimal
 import java.net.URL
-import java.sql.{
-  Array =>
-  _, _
-}
+import java.sql.{Array => _, _}
 import java.util
 import java.util.Calendar
 
