@@ -45,6 +45,8 @@ class IDriverTest {
         val con = DriverManager.getConnection(url, props)
 
         try {
+          con.setAutoCommit(false)
+
           val ps = con.prepareStatement("SELECT * FROM TEST\nWHERE X IN (?, ?)")
 
           try {
